@@ -6,7 +6,7 @@ export default class CustomNavbar extends Component {
     render() {
         return (
             <div>
-                <Navbar collapseOnSelect fixed="top" expand="lg" bg="dark" variant="dark">
+                <Navbar collapseOnSelect fixed="top" expand="false" bg="dark" variant="dark">
                   <Navbar.Brand><NavLink to="/"><Image style={{ height: '6vh', width: '10vw' }} src="assets/Logoo.png" /></NavLink></Navbar.Brand>
                   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                   <Navbar.Collapse id="responsive-navbar-nav">

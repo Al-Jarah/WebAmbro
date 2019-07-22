@@ -23,7 +23,7 @@ export default class AboutUs extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <h1>For now it is just Chaso13 and jameshuntt</h1>
+                    <h1>For now it is just chaso13 and jameshuntt</h1>
                 </Row>
             </Container>
         )
