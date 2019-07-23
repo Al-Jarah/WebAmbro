@@ -3,12 +3,22 @@ import LazyHero from 'react-lazy-hero';
 import { Button, Container, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+const ColoredLine = ({ color }) => (
+    <hr
+        style={{
+            color: color,
+            backgroundColor: color,
+            height: 4
+        }}
+    />
+);
+
 export default class Home extends Component {
     render() {
         return (
             <div>
                 <div id="first-home-element"style={{ height: '100vh', width: '100vw' }}>
-                    <LazyHero color="white" parallaxOffset="100" imageSrc="/assets/Lazy.jpg" minHeight="100vh">
+                    <LazyHero opacity=".6" color="white" parallaxOffset="100" imageSrc="/assets/Lazy.jpg" minHeight="100vh">
                         <Container>
                             <Row>
                                 <Col>
@@ -33,31 +43,37 @@ export default class Home extends Component {
                             </Row>
                             <Row>
                                 <Col>
-                                    <Button>
-                                        View our work
-                                    </Button>
+                                    <Link to="/RecentWork">
+                                        <Button>
+                                            View our work
+                                        </Button>
+                                    </Link>
                                 </Col>
                                 <Col>
-                                    <Button>
-                                        Request a quote
-                                    </Button>
+                                    <Link to="/RequestQuote">
+                                        <Button>
+                                            Request a quote
+                                        </Button>
+                                    </Link>
                                 </Col>
                             </Row>
                         </Container>
                     </LazyHero>
                 </div>
-                <div id="second-home-element" style={{ height: '100vh', width: '100vw' }}>
+                <div id="second-home-element" style={{ background: '#01579b', height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
-                                <h2>
-                                    Services we offer
-                                </h2>
+                                <Link to="/AllServices">
+                                    <h2>
+                                        Services we offer
+                                    </h2>
+                                </Link>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                                <Link>
+                                <Link to="/Hosting">
                                     <img src="" />
                                 </Link>
                                 <h4>
@@ -68,8 +84,8 @@ export default class Home extends Component {
                                 </p>
                             </Col>
                             <Col>
-                                <Link>
-                                    <img src="" />
+                                <Link to="/WebDevelopment">
+                                    <img src="/assets/webdevphoto.png" style={{ height: '35%', width: '45%' }} />
                                 </Link>
                                 <h4>
                                     Web Development
@@ -79,7 +95,7 @@ export default class Home extends Component {
                                 </p>
                             </Col>
                             <Col>
-                                <Link>
+                                <Link to="/WebMaintanence">
                                     <img src="" />
                                 </Link>
                                 <h4>
@@ -92,8 +108,8 @@ export default class Home extends Component {
                         </Row>
                         <Row>
                             <Col>
-                                <Link>
-                                    <img src="" />
+                                <Link to="/AppDevelopment">
+                                    <img src="/assets/AppDev.jpg" />
                                 </Link>
                                 <h4>
                                     App Development
@@ -103,7 +119,7 @@ export default class Home extends Component {
                                 </p>
                             </Col>
                             <Col>
-                                <Link>
+                                <Link to="/CustomSoftware">
                                     <img src="" />
                                 </Link>
                                 <h4>
@@ -114,7 +130,7 @@ export default class Home extends Component {
                                 </p>
                             </Col>
                             <Col>
-                                <Link>
+                                <Link to="/Licensing">
                                     <img src="" />
                                 </Link>
                                 <h4>
@@ -127,7 +143,7 @@ export default class Home extends Component {
                         </Row>
                     </Container>
                 </div>
-                <div id="third-home-element" style={{ height: '100vh', width: '100vw' }}>
+                <div id="third-home-element" style={{ background: '#ffa06d', height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
@@ -138,12 +154,12 @@ export default class Home extends Component {
                         </Row>
                         <Row>
                             <Col>
-
+                                <ColoredLine color="#002f6c" />
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '15%', width: '25%'}} src="/assets/React.png" />
                                 <h4>
                                     React
                                 </h4>
@@ -153,7 +169,7 @@ export default class Home extends Component {
                                 </p>
                             </Col>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/React-Native.png" />
                                 <h4>
                                     React-Native
                                 </h4>
@@ -163,7 +179,7 @@ export default class Home extends Component {
                                 </p>
                             </Col>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '30%', width: '35%'}} src="/assets/Vue.jpg" />
                                 <h4>
                                     Vue
                                 </h4>
@@ -173,7 +189,7 @@ export default class Home extends Component {
                                 </p>
                             </Col>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '20%', width: '45%'}} src="/assets/Vue-Native.png" />
                                 <h4>
                                     Vue-Native
                                 </h4>
@@ -185,51 +201,71 @@ export default class Home extends Component {
                         </Row>
                         <Row>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/Angular.png" />
                                 <h5></h5>
                                 <p></p>
                             </Col>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/Auth0.png" />
                                 <h5></h5>
                                 <p></p>
                             </Col>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/Bootstrap.png" />
                                 <h5></h5>
                                 <p></p>
                             </Col>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/C++.png" />
+                                <h5></h5>
+                                <p></p>
+                            </Col>
+                            <Col>
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/cPanel.jpeg" />
+                                <h5></h5>
+                                <p></p>
+                            </Col>
+                            <Col>
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/Express.jpeg" />
                                 <h5></h5>
                                 <p></p>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/Java.png" />
                                 <h5></h5>
                                 <p></p>
                             </Col>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/Javascript.png" />
                                 <h5></h5>
                                 <p></p>
                             </Col>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/MongoDB.jpg" />
                                 <h5></h5>
                                 <p></p>
                             </Col>
                             <Col>
-                                <img src="" />
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/Node.png" />
+                                <h5></h5>
+                                <p></p>
+                            </Col>
+                            <Col>
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/Python.jpg" />
+                                <h5></h5>
+                                <p></p>
+                            </Col>
+                            <Col>
+                                <img style={{ height: '20%', width: '30%'}} src="/assets/SSLTLS.png" />
                                 <h5></h5>
                                 <p></p>
                             </Col>
                         </Row>
                     </Container>
                 </div>
-                <div id="fourth-home-element" style={{ height: '100vh', width: '100vw' }}>
+                <div id="fourth-home-element" style={{ background: '#4f83cc', height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
@@ -255,7 +291,7 @@ export default class Home extends Component {
                         </Row>
                     </Container>
                 </div>
-                <div id="fifth-home-element" style={{ height: '100vh', width: '100vw' }}>
+                <div id="fifth-home-element" style={{ background: '#ff6e40', height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
@@ -274,6 +310,35 @@ export default class Home extends Component {
                             </Col>
                             <Col>
                                 <input type="text"></input>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className="footer">
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h3>
+                                    WebAmbrosia LLC
+                                </h3>
+                                <h5>
+                                    518-
+                                </h5>
+                                <h5>
+                                    WebAmbrosia00@gmail.com
+                                </h5>
+                            </Col>
+                            <Col>
+
+                            </Col>
+                            <Col>
+                            
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <ColoredLine color="#002f6c" />
+                                Copyright 2019 WebAmbrosia
                             </Col>
                         </Row>
                     </Container>
