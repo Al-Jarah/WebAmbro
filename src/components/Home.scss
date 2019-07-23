@@ -1,0 +1,35 @@
+
+.home-top-background-image{
+    height: 100vh;
+    width: 98.9vw;
+    z-index:0;
+}
+.home-top-jumbotron{
+    padding-top: 0;
+    padding-left:0;
+    height: 100vh;
+}
+.Logo{
+    z-index:1;
+    width:8%;
+    height:auto;
+    position: relative;
+    top: 20vh;
+}
+.Logoo{
+    z-index:1;
+    width:20%;
+    height:auto;
+    position:relative;
+    top: 20vh;
+}
+
+@media(max-width:768px){
+    .Logo{
+        width:20%;
+    }
+    .Logoo{
+        width:40%;
+    }
+
+}

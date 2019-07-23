@@ -1,12 +1,38 @@
+@import 'colors.scss';
+.navbar{
+    opacity:0.9;
+    z-index:2;
+    background-color:#000d1a;
+}
 .navbar-brand{
     position: absolute;
     width: 100%;
+    height: auto;
     left:0;
     top:0;
     margin:auto;
     padding:0;
+    opacity:1;
 }
 
 .navbar-toggle{
     z-index:1;
+    opacity:1;
+    color:white;
 }
+.navbar-toggler{
+    opacity:1;
+}
+
+.logo-nav{
+    width:3%;
+    height:auto;
+    position: relative;
+
+}
+.logoo-nav{
+    width:8%;
+    height:auto;
+    position: relative;
+}
+

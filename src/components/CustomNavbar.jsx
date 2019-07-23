@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Image, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { NavLink,Link} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import "./CustomNavbar.scss";
 
 export default class CustomNavbar extends Component {
     render() {
         return (
             <div>
-                <Navbar collapseOnSelect fixed="top" expand="false" bg="dark" variant="dark">
-                <Navbar.Brand className="navbar-brand"><NavLink to="/"><Image style={{ height: '7vh', width: '3vw' }} src="assets/Logo.png" /><Image style={{ height: '6vh', width: '10vw' }} src="assets/Logoo.png" /></NavLink></Navbar.Brand>
+                <Navbar collapseOnSelect fixed="top" expand="false" className="navbar" variant="dark" >
+                <Navbar.Brand className="navbar-brand"><NavLink to="/"><Image className="logo-nav" src="assets/Logo.png" /><Image className="logoo-nav" src="assets/Logoo.png" /></NavLink></Navbar.Brand>
                   <Navbar.Toggle className="navbar-toggle" aria-controls="responsive-navbar-nav" />
                   <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
