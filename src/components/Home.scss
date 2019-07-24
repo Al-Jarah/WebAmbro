@@ -1,27 +1,55 @@
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width:98.9vw;
+  display: block;
+  background-color: black;
+  opacity: 0.65;
+  z-index: 1;
+}
+.home-top-text{
+    position:relative;
+    padding-top: 7em;
+    padding-left:15em;
+    padding-right:15em;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#d8d8d8;
+    top: -95vh;
+    opacity:1;
+    z-index:2;
+}
 
 .home-top-background-image{
     height: 100vh;
     width: 98.9vw;
-    z-index:0;
+    z-index:-10;
 }
+
 .home-top-jumbotron{
     padding-top: 0;
     padding-left:0;
     height: 100vh;
+    z-index:-11;
+}
+.home-top-jumbotron p{
+    z-index:2; 
 }
 .Logo{
-    z-index:1;
+    z-index:2;
     width:8%;
     height:auto;
     position: relative;
-    top: 20vh;
+    top: -80vh;
 }
 .Logoo{
-    z-index:1;
+    z-index:2;
     width:20%;
     height:auto;
     position:relative;
-    top: 20vh;
+    top: -80vh;
 }
 
 @media(max-width:768px){
