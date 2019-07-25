@@ -3,16 +3,6 @@ import LazyHero from 'react-lazy-hero';
 import { Button, Container, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 2
-        }}
-    />
-);
-
 export default class Home extends Component {
     render() {
         return (
@@ -31,8 +21,6 @@ export default class Home extends Component {
                             </Row>
                             <Row>
                                 <Col>
-                                    <br></br>
-                                    <br></br>
                                     <p>
                                         lorem ipsum hsidhdhdhskjakjdcn odfhjvojfv udovshvjo ouhoduv hh uh u houhdousofu uoh uohu
                                         lorem ipsum hsidhdhdhskjakjdcn odfhjvojfv udovshvjo ouhoduv hh uh u houhdousofu uoh uohu
@@ -154,7 +142,7 @@ export default class Home extends Component {
                         </Row>
                         <Row>
                             <Col>
-                                <ColoredLine color="#002f6c" />
+                                <hr color="#002f6c" />
                             </Col>
                         </Row>
                         <Row>
@@ -337,7 +325,7 @@ export default class Home extends Component {
                         </Row>
                         <Row>
                             <Col>
-                                <ColoredLine color="#002f6c" />
+                                <hr color="#002f6c" />
                                 Copyright 2019 WebAmbrosia
                             </Col>
                         </Row>
