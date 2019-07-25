@@ -53,28 +53,22 @@ export default class Home extends Component {
                     <Container>
                         <Row>
                             <Col>
-                                <Link to="/AllServices">
-                                    <h2>
-                                        Services we offer
-                                    </h2>
-                                </Link>
+                                <Link to="/AllServices"><h2>Services we offer</h2></Link>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
                                 <Link to="/Hosting">
-                                    <img src="" />
+                                    <img className="service-icon" src="/assets/Computer.png" />
                                 </Link>
-                                <h4>
-                                    Hosting
-                                </h4>
+                                <h4>Hosting</h4>
                                 <p>
                                     
                                 </p>
                             </Col>
                             <Col>
                                 <Link to="/WebDevelopment">
-                                    <img src="/assets/computertouse.png" />
+                                    <img className="service-icon" src="/assets/Computer.png" />
                                 </Link>
                                 <h4>
                                     Web Development
@@ -85,7 +79,7 @@ export default class Home extends Component {
                             </Col>
                             <Col>
                                 <Link to="/WebMaintanence">
-                                    <img src="" />
+                                    <img className="service-icon" src="/assets/Computer.png" />
                                 </Link>
                                 <h4>
                                     Web Maintanence
@@ -98,7 +92,7 @@ export default class Home extends Component {
                         <Row>
                             <Col>
                                 <Link to="/AppDevelopment">
-                                    <img src="/assets/AppDev.jpg" />
+                                    <img className="service-icon" src="/assets/Computer.png" />
                                 </Link>
                                 <h4>
                                     App Development
@@ -109,7 +103,7 @@ export default class Home extends Component {
                             </Col>
                             <Col>
                                 <Link to="/CustomSoftware">
-                                    <img src="/assets/keyboard.png" />
+                                    <img className="service-icon" src="/assets/Computer.png" />
                                 </Link>
                                 <h4>
                                     Custom Software
@@ -120,7 +114,7 @@ export default class Home extends Component {
                             </Col>
                             <Col>
                                 <Link to="/Licensing">
-                                    <img src="" />
+                                    <img className="service-icon" src="/assets/Computer.png" />
                                 </Link>
                                 <h4>
                                     License our premade software
@@ -189,6 +183,15 @@ export default class Home extends Component {
                     <Container>
                         <Row>
                             <Col>
+
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className="home-element">
+                    <Container>
+                        <Row>
+                            <Col>
                                 <h2>Security</h2>
                             </Col>
                         </Row>
@@ -207,29 +210,6 @@ export default class Home extends Component {
                                 <img src="" />
                                 <h4>Booby Traps</h4>
                                 <p>security shit</p>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-                <div className="home-element">
-                    <Container>
-                        <Row>
-                            <Col>
-                                <h1>Need custom software?</h1>
-                                <h2>let's start with a free quote</h2>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <input type="text"></input>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <input type="text"></input>
-                            </Col>
-                            <Col>
-                                <input type="text"></input>
                             </Col>
                         </Row>
                     </Container>
