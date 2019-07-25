@@ -8,7 +8,7 @@ const ColoredLine = ({ color }) => (
         style={{
             color: color,
             backgroundColor: color,
-            height: 4
+            height: 2
         }}
     />
 );
@@ -60,7 +60,7 @@ export default class Home extends Component {
                         </Container>
                     </LazyHero>
                 </div>
-                <div id="second-home-element" style={{ background: '#01579b', height: '100vh', width: '100vw' }}>
+                <div id="second-home-element" style={{ /*background: '#01579b', */height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
@@ -85,7 +85,7 @@ export default class Home extends Component {
                             </Col>
                             <Col>
                                 <Link to="/WebDevelopment">
-                                    <img src="/assets/webdevphoto.png" style={{ height: '35%', width: '45%' }} />
+                                    <img src="/assets/computertouse.png" />
                                 </Link>
                                 <h4>
                                     Web Development
@@ -120,7 +120,7 @@ export default class Home extends Component {
                             </Col>
                             <Col>
                                 <Link to="/CustomSoftware">
-                                    <img src="" />
+                                    <img src="/assets/keyboard.png" />
                                 </Link>
                                 <h4>
                                     Custom Software
@@ -143,7 +143,7 @@ export default class Home extends Component {
                         </Row>
                     </Container>
                 </div>
-                <div id="third-home-element" style={{ background: '#ffa06d', height: '100vh', width: '100vw' }}>
+                <div id="third-home-element" style={{ /*background: '#ffa06d', */height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
@@ -265,7 +265,7 @@ export default class Home extends Component {
                         </Row>
                     </Container>
                 </div>
-                <div id="fourth-home-element" style={{ background: '#4f83cc', height: '100vh', width: '100vw' }}>
+                <div id="fourth-home-element" style={{ /*background: '#4f83cc', */height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
@@ -291,7 +291,7 @@ export default class Home extends Component {
                         </Row>
                     </Container>
                 </div>
-                <div id="fifth-home-element" style={{ background: '#ff6e40', height: '100vh', width: '100vw' }}>
+                <div id="fifth-home-element" style={{ /*background: '#ff6e40', */height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
