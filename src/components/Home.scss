@@ -1,3 +1,4 @@
+@import 'colors.scss';
 .overlay{
   position: absolute;
   top: 0;
@@ -6,8 +7,11 @@
   width:98.9vw;
   display: block;
   background-color: black;
-  opacity: 0.65;
+  opacity: 0.5;
   z-index: 1;
+}
+.Particles{
+    background-color: #001022;
 }
 .home-top-text{
     position:relative;
