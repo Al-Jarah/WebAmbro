@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import LazyHero from 'react-lazy-hero';
 import { Button, Container, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Home.scss'
 
 export default class Home extends Component {
     render() {
         return (
             <div>
-                <div className="first-home-element" style={{ height: '100vh', width: '100vw' }}>
+                <div className="home-element">
                     <LazyHero opacity=".6" color="white" parallaxOffset="100" imageSrc="/assets/Lazy.jpg" minHeight="100vh">
                         <Container>
                             <Row>
@@ -48,7 +49,7 @@ export default class Home extends Component {
                         </Container>
                     </LazyHero>
                 </div>
-                <div className="second-home-element" style={{ height: '100vh', width: '100vw' }}>
+                <div className="home-element">
                     <Container>
                         <Row>
                             <Col>
@@ -131,125 +132,60 @@ export default class Home extends Component {
                         </Row>
                     </Container>
                 </div>
-                <div className="third-home-element" style={{ height: '100vh', width: '100vw' }}>
+                <div className="home-element">
                     <Container>
                         <Row>
                             <Col>
-                                <h2>
-                                    Latest Technology we use
-                                </h2>
+                                <h2>Latest Technology we use</h2>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                                <hr color="#002f6c" />
+                                <hr className="technology-line" />
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                                <img style={{ height: '20%', width: '45%'}} src="/assets/MongoDB.svg" />
-                                <h4>
-                                    mongoDB
-                                </h4>
-                                <p>
-                                    MongoDB is a file base database. This database is used to store user data.
-                                </p>
+                                <img className="language-icon" src="/assets/MongoDB.svg" />
+                                <h4>mongoDB</h4>
+                                <p>MongoDB is a file base database. This database is used to store user data.</p>
                             </Col>
                             <Col>
-                                <img style={{ height: '20%', width: '45%'}} src="/assets/Express.svg" />
-                                <h4>
-                                    Express.js
-                                </h4>
-                                <p>
-                                    Express.js is a javascript framework built for connecting to your database.
-                                </p>
+                                <img className="language-icon" src="/assets/Express.svg" />
+                                <h4>Express.js</h4>
+                                <p>Express.js is a javascript framework built for connecting to your database.</p>
                             </Col>
                             <Col>
-                                <img style={{ height: '20%', width: '45%'}} src="/assets/React.svg" />
-                                <h4>
-                                    React
-                                </h4>
-                                <p>
-                                    React is a javascript framework built with efficiency and speed in mind.
-                                </p>
+                                <img className="language-icon" src="/assets/React.svg" />
+                                <h4>React</h4>
+                                <p>React is a javascript framework built with efficiency and speed in mind.</p>
                             </Col>
                             <Col>
-                                <img style={{ height: '20%', width: '45%'}} src="/assets/Node.svg" />
-                                <h4>
-                                    Node.js
-                                </h4>
-                                <p>
-                                    Node.js is a javascript framework which is helpful with creating a server.
-                                </p>
+                                <img className="language-icon" src="/assets/Node.svg" />
+                                <h4>Node.js</h4>
+                                <p>Node.js is a javascript framework which is helpful with creating a server.</p>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/Angular.png" />
-                                <h5></h5>
-                                <p></p>
+                                <img className="language-icon" src="/assets/Sass.svg" />
+                                <h4>Sass</h4>
+                                <p>Implementing the stylings of css, sass is the newest solution for styling your webpage.</p>
                             </Col>
                             <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/Auth0.png" />
-                                <h5></h5>
-                                <p></p>
+                                <img className="language-icon" src="/assets/Bootstrap.svg" />
+                                <h4>Bootstrap</h4>
+                                <p>Bootstrap is the industry standard in implementing easy to use grid system.</p>
                             </Col>
                             <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/Bootstrap.png" />
-                                <h5></h5>
-                                <p></p>
-                            </Col>
-                            <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/C++.png" />
-                                <h5></h5>
-                                <p></p>
-                            </Col>
-                            <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/cPanel.jpeg" />
-                                <h5></h5>
-                                <p></p>
-                            </Col>
-                            <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/Express.jpeg" />
-                                <h5></h5>
-                                <p></p>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/Java.png" />
-                                <h5></h5>
-                                <p></p>
-                            </Col>
-                            <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/Javascript.png" />
-                                <h5></h5>
-                                <p></p>
-                            </Col>
-                            <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/MongoDB.jpg" />
-                                <h5></h5>
-                                <p></p>
-                            </Col>
-                            <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/Node.png" />
-                                <h5></h5>
-                                <p></p>
-                            </Col>
-                            <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/Python.jpg" />
-                                <h5></h5>
-                                <p></p>
-                            </Col>
-                            <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/SSLTLS.png" />
-                                <h5></h5>
-                                <p></p>
+                                <img className="language-icon" src="/assets/Redux.svg" />
+                                <h4>Redux</h4>
+                                <p>Redux pairs with React in order to properly manage screen state changes.</p>
                             </Col>
                         </Row>
                     </Container>
                 </div>
-                <div className="fourth-home-element" style={{ height: '100vh', width: '100vw' }}>
+                <div className="home-element">
                     <Container>
                         <Row>
                             <Col>
@@ -275,7 +211,7 @@ export default class Home extends Component {
                         </Row>
                     </Container>
                 </div>
-                <div className="fifth-home-element" style={{ height: '100vh', width: '100vw' }}>
+                <div className="home-element">
                     <Container>
                         <Row>
                             <Col>
