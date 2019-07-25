@@ -7,6 +7,7 @@ import Home from './components/Home';
 import CurrentlySupporting from './components/CurrentlyServicing';
 import AllServices from './components/AllServices';
 import AboutUs from './components/AboutUs';
+import Contact from'./components/Contact';
 import Hosting from './components/services/Hosting';
 import WebDev from './components/services/WebDev';
 import AppDev from './components/services/AppDev';
@@ -21,6 +22,7 @@ function App() {
             <Route path="/Currentlysupporting" component={CurrentlySupporting} />
             <Route path="/AllServices" component={AllServices} />
             <Route path="/AboutUs" component={AboutUs} />
+            <Route path="/Contact" component={Contact}/>
             <Route path="/Hosting" component={Hosting} />
             <Route path="/WebDev" component={WebDev} />
             <Route path="/AppDev" component={AppDev} />
