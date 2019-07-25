@@ -7,7 +7,7 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <div id="first-home-element"style={{ height: '100vh', width: '100vw' }}>
+                <div className="first-home-element" style={{ height: '100vh', width: '100vw' }}>
                     <LazyHero opacity=".6" color="white" parallaxOffset="100" imageSrc="/assets/Lazy.jpg" minHeight="100vh">
                         <Container>
                             <Row>
@@ -48,7 +48,7 @@ export default class Home extends Component {
                         </Container>
                     </LazyHero>
                 </div>
-                <div id="second-home-element" style={{ /*background: '#01579b', */height: '100vh', width: '100vw' }}>
+                <div className="second-home-element" style={{ height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
@@ -131,7 +131,7 @@ export default class Home extends Component {
                         </Row>
                     </Container>
                 </div>
-                <div id="third-home-element" style={{ /*background: '#ffa06d', */height: '100vh', width: '100vw' }}>
+                <div className="third-home-element" style={{ height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
@@ -152,8 +152,7 @@ export default class Home extends Component {
                                     mongoDB
                                 </h4>
                                 <p>
-                                    React is one of the most efficient and speedy languages of web development in 2019.
-                                    React is one of the most efficient and speedy languages of web development in 2019.
+                                    MongoDB is a file base database. This database is used to store user data.
                                 </p>
                             </Col>
                             <Col>
@@ -162,8 +161,7 @@ export default class Home extends Component {
                                     Express.js
                                 </h4>
                                 <p>
-                                    React-Native is one of the most efficient and speedy languages of app development in 2019.
-                                    React-Native is one of the most efficient and speedy languages of app development in 2019.
+                                    Express.js is a javascript framework built for connecting to your database.
                                 </p>
                             </Col>
                             <Col>
@@ -172,8 +170,7 @@ export default class Home extends Component {
                                     React
                                 </h4>
                                 <p>
-                                    Vue is one of the most efficient and speedy languages of web development in 2019.
-                                    Vue is one of the most efficient and speedy languages of web development in 2019.
+                                    React is a javascript framework built with efficiency and speed in mind.
                                 </p>
                             </Col>
                             <Col>
@@ -182,8 +179,7 @@ export default class Home extends Component {
                                     Node.js
                                 </h4>
                                 <p>
-                                    Vue-Native is one of the most efficient and speedy languages of web development in 2019.
-                                    Vue-Native is one of the most efficient and speedy languages of web development in 2019.
+                                    Node.js is a javascript framework which is helpful with creating a server.
                                 </p>
                             </Col>
                         </Row>
@@ -253,7 +249,7 @@ export default class Home extends Component {
                         </Row>
                     </Container>
                 </div>
-                <div id="fourth-home-element" style={{ /*background: '#4f83cc', */height: '100vh', width: '100vw' }}>
+                <div className="fourth-home-element" style={{ height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
@@ -279,7 +275,7 @@ export default class Home extends Component {
                         </Row>
                     </Container>
                 </div>
-                <div id="fifth-home-element" style={{ /*background: '#ff6e40', */height: '100vh', width: '100vw' }}>
+                <div className="fifth-home-element" style={{ height: '100vh', width: '100vw' }}>
                     <Container>
                         <Row>
                             <Col>
