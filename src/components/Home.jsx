@@ -135,7 +135,7 @@ export default class Home extends Component {
                         </Row>
                         <Row>
                             <Col>
-                                <hr className="technology-line" />
+                                <hr className="technology-line" color="orange" />
                             </Col>
                         </Row>
                         <Row>
