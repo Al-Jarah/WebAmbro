@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 export default class CurrentlyServicing extends Component {
     render() {
@@ -12,7 +12,7 @@ export default class CurrentlyServicing extends Component {
                         </p>
                     </Col>
                     <Col xs={12} md={9}>
-                        <Image />
+                        
                     </Col>
                 </Row>
             </Container>
