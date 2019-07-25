@@ -147,39 +147,39 @@ export default class Home extends Component {
                         </Row>
                         <Row>
                             <Col>
-                                <img style={{ height: '15%', width: '25%'}} src="/assets/React.png" />
+                                <img style={{ height: '20%', width: '45%'}} src="/assets/MongoDB.svg" />
+                                <h4>
+                                    mongoDB
+                                </h4>
+                                <p>
+                                    React is one of the most efficient and speedy languages of web development in 2019.
+                                    React is one of the most efficient and speedy languages of web development in 2019.
+                                </p>
+                            </Col>
+                            <Col>
+                                <img style={{ height: '20%', width: '45%'}} src="/assets/Express.svg" />
+                                <h4>
+                                    Express.js
+                                </h4>
+                                <p>
+                                    React-Native is one of the most efficient and speedy languages of app development in 2019.
+                                    React-Native is one of the most efficient and speedy languages of app development in 2019.
+                                </p>
+                            </Col>
+                            <Col>
+                                <img style={{ height: '20%', width: '45%'}} src="/assets/React.svg" />
                                 <h4>
                                     React
                                 </h4>
                                 <p>
-                                    React is one of the most efficient and speedy languages of web development in 2019.
-                                    React is one of the most efficient and speedy languages of web development in 2019.
-                                </p>
-                            </Col>
-                            <Col>
-                                <img style={{ height: '20%', width: '30%'}} src="/assets/React-Native.png" />
-                                <h4>
-                                    React-Native
-                                </h4>
-                                <p>
-                                    React-Native is one of the most efficient and speedy languages of app development in 2019.
-                                    React-Native is one of the most efficient and speedy languages of app development in 2019.
-                                </p>
-                            </Col>
-                            <Col>
-                                <img style={{ height: '30%', width: '35%'}} src="/assets/Vue.jpg" />
-                                <h4>
-                                    Vue
-                                </h4>
-                                <p>
                                     Vue is one of the most efficient and speedy languages of web development in 2019.
                                     Vue is one of the most efficient and speedy languages of web development in 2019.
                                 </p>
                             </Col>
                             <Col>
-                                <img style={{ height: '20%', width: '45%'}} src="/assets/Vue-Native.png" />
+                                <img style={{ height: '20%', width: '45%'}} src="/assets/Node.svg" />
                                 <h4>
-                                    Vue-Native
+                                    Node.js
                                 </h4>
                                 <p>
                                     Vue-Native is one of the most efficient and speedy languages of web development in 2019.
