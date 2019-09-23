@@ -1,12 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import CustomNavbar from './components/CustomNavbar';
+import CustomNavbar from './components/CustomNavbar/CustomNavbar';
 import { Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import CurrentlySupporting from './components/CurrentlyServicing';
-import AboutUs from './components/AboutUs';
-import Contact from './components/Contact';
+import Home from './components/Home/Home';
+import CurrentlyServicing from './components/CurrentlyServicing/CurrentlyServicing';
+import AboutUs from './components/AboutUs/AboutUs';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import AllServices from './components/Services/Services';
+import AppDevelopment from './components/Services/AppDevelopment/AppDevelopment';
+import WebDevelopment from './components/Services/WebDevelopment/WebDevelopment';
+import Hosting from './components/Services/Hosting/Hosting';
+import Maintanence from './components/Services/Maintanence/Maintanence';
+import CustomSoftware from './components/Services/CustomSoftware/CustomSoftware';
 
 function App() {
   return (
@@ -14,10 +20,17 @@ function App() {
         <CustomNavbar />
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route path="/Currentlysupporting" component={CurrentlySupporting} />
-            <Route path="/AboutUs" component={AboutUs} />
+            <Route path="/CurrentlyServicing" component={CurrentlyServicing} />
+            <Route path="/About" component={AboutUs} />
             <Route path="/Contact" component={Contact} />
+            <Route path="/AllServices" component={AllServices} />
+            <Route path="/AppDevelopment" component={AppDevelopment} />
+            <Route path="/WebDevelopment" component={WebDevelopment} />
+            <Route path="/Hosting" component={Hosting} />
+            <Route path="/Maintanence" component={Maintanence} />
+            <Route path="/CustomSoftware" component={CustomSoftware} />
         </Switch>
+        <Footer />
     </div>
   );
 }
