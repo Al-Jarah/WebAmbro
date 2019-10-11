@@ -9,7 +9,9 @@ import Maintanence from './Maintanence';
 
 const SidebarStyle = {
     width: '15vw',
-    backgroundColor: 'gray',
+    borderStyle: 'solid',
+    borderRadius: '2%',
+    borderWidth: '1px',
     height: '70vh',
     overFlow: 'visible',
     marginLeft: '5vw',

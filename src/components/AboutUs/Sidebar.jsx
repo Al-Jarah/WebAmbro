@@ -4,23 +4,23 @@ import { Button } from 'react-bootstrap';
 import Chase from './Founders/Chase';
 import Elijah from './Founders/Elijah';
 import James from './Founders/James';
-import Mahad from'./Founders/Mahad';
 import Rao from './Founders/Rao';
+import './Sidebar.scss';
 
 const SidebarStyle = {
-    width: '15vw',
+    width: '90vw',
     backgroundColor: 'gray',
-    height: '70vh',
-    overFlow: 'visible',
-    marginLeft: '5vw',
-    marginTop: '2px'
+    height: '8vh',
+    overFlow: 'visible'
 }
 
 const ListStyle = {
     listStyle: 'none',
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between'
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginLeft: '0',
+    paddingLeft: '0'
 }
 
 export default class Sidebar extends Component {
@@ -29,29 +29,24 @@ export default class Sidebar extends Component {
             <div style={SidebarStyle}>
                 <Router>
                     <div>
-                        <h2>Categories</h2>
                         <ul style={ListStyle}>
                             <li>
-                                <Link to="/Chase"><Button>Chase</Button></Link>
+                                <Link to="/Chase"><Button className="founders-button">Chase</Button></Link>
                             </li>
                             <li>
-                                <Link to="/Elijah"><Button>Elijah</Button></Link>
+                                <Link to="/Elijah"><Button className="founders-button">Elijah</Button></Link>
                             </li>
                             <li>
-                                <Link to="/James"><Button>James</Button></Link>
+                                <Link to="/James"><Button className="founders-button">James</Button></Link>
                             </li>
                             <li>
-                                <Link to="/Mahad"><Button>Mahad</Button></Link>
-                            </li>
-                            <li>
-                                <Link to="/Rao"><Button>Rao</Button></Link>
+                                <Link to="/Rao"><Button className="founders-button">Rao</Button></Link>
                             </li>
                         </ul>
                         <Switch>
                             <Route path="/Chase" component={Chase} />
                             <Route path="/Elijah" component={Elijah} />
                             <Route path="/James" component={James} />
-                            <Route path="/Mahad" component={Mahad} />
                             <Route path="/Rao" component={Rao} />
                         </Switch>
                     </div>

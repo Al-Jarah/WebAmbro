@@ -2,7 +2,6 @@
     padding-top: 9vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(159, 156, 156);
 }
 
 .about-sub-container {
@@ -27,3 +26,12 @@
     flex-direction: column;
 }
 
+.founders {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-founders-spacer {
+    height: 91vh;
+    width: 5vw;
+}

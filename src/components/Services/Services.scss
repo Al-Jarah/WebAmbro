@@ -1,29 +1,11 @@
 .all-services-main-container {
-    padding-top: 9vh;
+    padding-top: 11vh;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
-.all-services-sub-container-one {
-    height: 91vh;
-}
-
-.all-services-sub-container-two {
-    height: 91vh;
-}
-
-.all-services-sub-container-three {
-    height: 91vh;
-}
-
-.all-services-sub-container-four {
-    height: 91vh;
-}
-
-.all-services-sub-container-five {
-    height: 91vh;
-}
-
-.all-services-sub-container-six {
-    height: 91vh;
+.services-line {
+    height: 1px;
+    width: 90vw;
 }

@@ -15,7 +15,7 @@ export default class ServicesHome extends Component {
                 <Container>
                     <Row>
                         <Col>
-                            <Link to="/AllServices"><h2>Services we offer</h2></Link>
+                            <Link to="/AllServices"><h2 className="services-home-heading">Services we offer</h2></Link>
                         </Col>
                     </Row>
 

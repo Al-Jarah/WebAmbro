@@ -5,7 +5,7 @@ export default class Elijah extends Component {
     render() {
         return (
             <div>
-                <UserCard name="Rao"></UserCard>
+                <UserCard name="Elijah"></UserCard>
             </div>
         )
     }

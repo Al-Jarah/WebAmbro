@@ -1,30 +1,90 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Services.scss';
+import { Container, Col, Row, Button } from 'react-bootstrap';
+import WebDevelopmentContact from './WebDevelopmentContact';
+import Hosting from '../svgs/Hosting';
+import CustomSoftware from '../svgs/CustomSoftware';
+import WebDev from '../svgs/WebDev';
+import AppDev from '../svgs/AppDev';
 
 export default class Services extends Component {
+    constructor(props){
+        super(props);
+        this.state = { showPopup: false };
+    }
+      
+    togglePopup() {
+     this.setState({
+        showPopup: !this.state.showPopup
+      });
+    }
     render() {
         return (
             <div className="all-services-main-container">
-                <div className="all-services-sub-container-one">
-                    <h3>Services</h3>
-                    <p>Here at WebAmbrosia, we have equipped ourselves with the latest technologies to meet all of your tech solutions.</p>
-                </div>
-                <div className="all-services-sub-container-two">
-                    <p>Services</p>
-                </div>
-                <div className="all-services-sub-container-three">
-                    <p>Services</p>
-                </div>
-                <div className="all-services-sub-container-four">
-                    <p>Services</p>
-                </div>
-                <div className="all-services-sub-container-five">
-                    <p>Services</p>
-                </div>
-                <div className="all-services-sub-container-six">
-                    <p>Services</p>
-                </div>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h3>Services</h3>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <hr className="services-line" color="red" />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={4}>
+                            <p>
+                                Here at WebAmbrosia, we understand that every project is unique. Based upon this understanding, 
+                                we do not have set rates for all of our services. The only set prices that we have are for hosting. 
+                                Hosting prices can be seen below. Otherwise, please fill out our contact form in order to communicate 
+                                with us so that we can better understand your needs. All of the inquiries will be reviewed within 24 
+                                hours. We will contact you within 48 hours. 
+                            </p>
+                        </Col>
+                        <Col xs={12} md={4}>
+                            <Hosting />
+                            <h4>Hosting</h4>
+                            <Button>Hosting Prices</Button>
+                        </Col>
+                        <Col xs={12} md={4}>
+                            <Hosting />
+                            <h4>Premade software</h4>
+                            <Button>Premade software pricing</Button>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12}>
+                            <br />
+                            <br />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={4}>
+                            <AppDev />
+                            <h4>App development</h4>
+                            <Button onClick={this.togglePopup.bind(this)}>Request a quote</Button>
+                        </Col>
+                        <Col xs={12} md={4}>
+                            <WebDev />
+                            <h4>Web Development</h4>
+                            <Button>Request a quote</Button>
+                        </Col>
+                        <Col xs={12} md={4}>
+                            <CustomSoftware />
+                            <h4>Custom software</h4>
+                            <Button>Request a quote</Button>
+                        </Col>
+                    </Row>
+                    {this.state.showPopup ?
+                        <WebDevelopmentContact
+                        text='Click "Close Button" to hide popup'
+                        closePopup={this.togglePopup.bind(this)}
+                        />
+                        : null
+                    }
+                </Container>
             </div>
         )
     }

@@ -25,12 +25,14 @@ export default class AboutUs extends Component {
                         </p>
                         <h1>Scroll down to view the team</h1>
                     </div>
-                    <div className="about-sub-container-div-three">
-                        <img src="/assets/2018.png" style={{height: '20vh'}} />
-                    </div>
                 </div>
-                <div className="about-sub-container">
-                    <Sidebar />
+                <div className="founders" style={{ display: 'flex', flexDirection: 'row' }}>
+                    <div className="vertical-founders-spacer" />
+                    <div className="founders-sub-container">
+                        <Sidebar />
+                        <div className="horizontal-founders-spacer" />
+                    </div>
+                    <div className="vertical-founders-spacer" />
                 </div>
             </div>
         )

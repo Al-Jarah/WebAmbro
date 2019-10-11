@@ -18,8 +18,8 @@ export default class JamesNavbar extends Component {
               </div>
               <div className="navbar-right-spacer" />
               <div className="navbar-buttons">
-                <Link to="/CurrentlyServicing"><Button variant="outline-light" >Currently Servicing</Button></Link>
-                <Link to="/AllServices"><Button variant="outline-light">Services</Button></Link>
+                <Link to="/CurrentlyServicing"><Button variant="outline-light">Servicing</Button></Link>
+                <Link to="/AllServices"><Button variant="outline-light">Products</Button></Link>
               </div>
             </div>
         )
