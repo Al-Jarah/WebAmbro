@@ -15,14 +15,16 @@ const SidebarStyle = {
     height: '70vh',
     overFlow: 'visible',
     marginLeft: '5vw',
-    marginTop: '2px'
+    marginTop: '2px',
+    backgroundColor: 'gray'
 }
 
 const ListStyle = {
     listStyle: 'none',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    justifyItems: 'center'
 }
 
 export default class Sidebar extends Component {

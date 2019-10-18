@@ -25,22 +25,23 @@ export default class Services extends Component {
                 <Container>
                     <Row>
                         <Col>
+                            <br />
                             <h3>Services</h3>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <hr className="services-line" color="red" />
+                            <br />
                         </Col>
                     </Row>
                     <Row>
                         <Col xs={12} md={4}>
                             <p>
                                 Here at WebAmbrosia, we understand that every project is unique. Based upon this understanding, 
-                                we do not have set rates for all of our services. The only set prices that we have are for hosting. 
-                                Hosting prices can be seen below. Otherwise, please fill out our contact form in order to communicate 
-                                with us so that we can better understand your needs. All of the inquiries will be reviewed within 24 
-                                hours. We will contact you within 48 hours. 
+                                we do not have set rates for all of our services. The only set prices that we have are for hosting 
+                                and premade software. For other services please fill out our contact form and we will get back to you 
+                                within 48 hours.
                             </p>
                         </Col>
                         <Col xs={12} md={4}>

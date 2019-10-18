@@ -26,8 +26,8 @@ $darkOrangeColor: #c53d13;
 .home-top-text{
     position:relative;
     padding-top: 9em;
-    padding-left:18em;
-    padding-right:18em;
+    padding-left:30vw;
+    padding-right:30vw;
     padding-bottom:1.5em;
     font-size: 1.3rem;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -100,4 +100,18 @@ $darkOrangeColor: #c53d13;
     height: 195vh;
     width: 100vw;
     padding-top: 9vh;
+}
+
+@media(max-width: 975px) {
+    .home-top-text{
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+}
+
+@media(max-width: 720px) {
+    .home-top-text{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
 }
