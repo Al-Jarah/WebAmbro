@@ -35,6 +35,11 @@ img {
     width: auto;
 }
 
+@media(max-width: 858px) {
+    .navbar-buttons {
+        display: none;
+    }
+}
 
 //.navbar-brand {
 //    position: absolute;

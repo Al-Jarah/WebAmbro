@@ -87,6 +87,13 @@ $darkOrangeColor: #c53d13;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
+.home-technologies {
+    height: 91vh;
+    width: 100vw;
+    padding-top: 9vh;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
 .language-icon {
     height: 20%;
     width: 45%;
@@ -113,5 +120,14 @@ $darkOrangeColor: #c53d13;
     .home-top-text{
         padding-left: 10vw;
         padding-right: 10vw;
+    }
+}
+
+@media(max-width: 770px) {
+    .home-services {
+        height: 240vh;
+    }
+    .home-technologies {
+        height: 140vh;
     }
 }
