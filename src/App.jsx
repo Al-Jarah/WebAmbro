@@ -8,11 +8,6 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import AllServices from './components/Services/Services';
-import AppDevelopment from './components/Services/AppDevelopment/AppDevelopment';
-import WebDevelopment from './components/Services/WebDevelopment/WebDevelopment';
-import Hosting from './components/Services/Hosting/Hosting';
-import Maintanence from './components/Services/Maintanence/Maintanence';
-import CustomSoftware from './components/Services/CustomSoftware/CustomSoftware';
 
 function App() {
   return (
@@ -24,11 +19,6 @@ function App() {
             <Route path="/About" component={AboutUs} />
             <Route path="/Contact" component={Contact} />
             <Route path="/AllServices" component={AllServices} />
-            <Route path="/AppDevelopment" component={AppDevelopment} />
-            <Route path="/WebDevelopment" component={WebDevelopment} />
-            <Route path="/Hosting" component={Hosting} />
-            <Route path="/Maintanence" component={Maintanence} />
-            <Route path="/CustomSoftware" component={CustomSoftware} />
         </Switch>
         <Footer />
     </div>
